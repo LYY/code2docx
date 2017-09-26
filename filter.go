@@ -23,7 +23,7 @@ func FindFiles(conf *Config) ([]string, error) {
 		}
 
 		var ok bool
-		if len(conf.Types) == 0 {
+		if ok = len(conf.Types) == 0; ok {
 			listfile = append(listfile, path)
 		} else {
 			//用strings.HasSuffix(src, suffix)//判断src中是否包含 suffix结尾
@@ -35,7 +35,7 @@ func FindFiles(conf *Config) ([]string, error) {
 				}
 			}
 		}
-		log.Println(ok, "               ", path) //list the file
+		log.Println(ok, "      ", path) //list the file
 
 		return nil
 	})
