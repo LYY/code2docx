@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "baliance.com/gooxml"
+  packages = [".","color","common","document","measurement","schema/soo/dml","schema/soo/dml/picture","schema/soo/ofc/docPropsVTypes","schema/soo/ofc/extended_properties","schema/soo/ofc/math","schema/soo/ofc/sharedTypes","schema/soo/pkg/content_types","schema/soo/pkg/metadata/core_properties","schema/soo/pkg/relationships","schema/soo/schemaLibrary","schema/soo/wml","zippkg"]
+  revision = "427f7b1e4510fa2835ff1d0a0017f428f5558bac"
+
+[[projects]]
   name = "github.com/alecthomas/kingpin"
   packages = ["."]
   revision = "1087e65c9441605df944fb12c33f0fe7072d18ca"
@@ -22,6 +28,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "596eb70deb668a1c7b96b4c800137efee7bcd099323aedaa5043b695a411b788"
+  inputs-digest = "eaa917427a0bf8a94d9d4dbfddde352e2f3a4e5f4267e14ca03ffd67b28c5960"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -2,9 +2,12 @@ package code2docx
 
 // Config configration
 type Config struct {
-	Excludes    []string
+	// Excludes    []string
 	ExcludeDirs []string
-	Dirs        []string
-	Files       []string
-	Out         string
+	Dir         string
+	// Files       []string
+	Types  []string
+	Out    string
+	Header string
+	Title  string
 }
