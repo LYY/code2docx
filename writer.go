@@ -24,7 +24,7 @@ func (o *Outer) WriteDoc() error {
 			return err
 		}
 
-		filename := strings.Replace(file, o.Base+"/", "", 1)
+		filename := strings.Replace(file, o.Base, "", 1)
 
 		o.writeToDoc(filename, filebytes)
 

@@ -42,7 +42,7 @@ func main() {
 
 	outer := &code2docx.Outer{
 		Config:  conf,
-		Base:    conf.Dir,
+		Base:    conf.Dir + string(filepath.Separator),
 		Files:   files,
 		Docfile: conf.Out,
 	}
