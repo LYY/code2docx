@@ -49,17 +49,16 @@ func (o *Outer) init() {
 	para.AddRun().AddText("")
 }
 
-func ensurePPr(p *wml.CT_P) {
-	if p.PPr == nil {
-		p.PPr = wml.NewCT_PPr()
+func ensurePPr(para document.Paragraph) {
+	if para.X().PPr == nil {
+		para.X().PPr = wml.NewCT_PPr()
 	}
 }
 func setParagraphAlignCenter(para document.Paragraph) {
+	ensurePPr(para)
 	paraAlign := wml.NewCT_Jc()
 	paraAlign.ValAttr = wml.ST_JcCenter
-	x := para.X()
-	ensurePPr(x)
-	x.PPr.Jc = paraAlign
+	para.X().PPr.Jc = paraAlign
 }
 
 func (o *Outer) writeToDoc(filename, filepath string) {
